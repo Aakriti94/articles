@@ -15,6 +15,7 @@ Telnet is Teletype Network Protocol (Remote access Protocol). It is a command li
 
 ## Why do we need telnet?
  - To access remote machine over the internet.
+ - Telnet can be used to test or troubleshoot remote web or mail servers.
 
 ## Syntax
  > telnet hostname port <br>
@@ -25,21 +26,6 @@ The user executes commands on the server by using specific Telnet commands into 
 
 - Port used by TCP - port 23
 - Port used by SSH - port 22
-
-## What are common uses for Telnet?
- - Telnet can be used to test or troubleshoot remote web or mail servers.
-
-
-## Prerequisites of telent command
-
-- we should have a telnet client to access telnet over a machine or a server.
-- Telnet Package must be installed in your system.
-- If telnet package isn't installed in your system, it would give error like:
-
-  ```
-  telnet some.host.com
-  bash: telnet: command not found
-  ```
 
 ## Installation:
 
@@ -121,6 +107,18 @@ which telnet
 telnet-0.17-48.el6.x86_64
 
 ```
+
+## Notes
+
+- we should have a telnet client to access telnet over a machine or a server.
+- Telnet Package must be installed in your system.
+- If telnet package isn't installed in your system, it would give error like:
+
+  ```
+  telnet some.host.com
+  bash: telnet: command not found
+  ```
+  
 
 ## Important Links:
   - https://www.computerhope.com/unix/utelnet.htm
