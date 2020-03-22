@@ -18,8 +18,15 @@ Telnet is Teletype Network Protocol (Remote access Protocol). It is a command li
  - Telnet can be used to test or troubleshoot remote web or mail servers.
 
 ## Syntax
- > telnet hostname port <br>
-   telnet www.host.com 8090
+ - Telnet to the default port of a host:
+    ```
+    telnet [host]
+    ```
+  - Telnet to a specific port of a host:
+    ```
+    telnet [hostname/ip address] [port] <br>
+    telnet www.host.com 8090
+    ```
 
 ## Usage
 The user executes commands on the server by using specific Telnet commands into the Telnet prompt. To end a session and log off, the user ends a Telnet command with Telnet.
