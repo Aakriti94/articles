@@ -216,18 +216,18 @@ tigervnc-server-applet-1.1.0-24.el6.noarch
 
   1. Open your terminal and type command: ```vncserver```
 
-    ```
+      ```
       -bash-4.1$ vncserver
 
       New 'hotsname:5 (akashyap)' desktop is hotsname:5
 
       Starting applications specified in /home/akashyap/.vnc/xstartup
       Log file is /home/akashyap/.vnc/hotsname:5.log
-    ```
+      ```
 
-    - ```hotsname``` is the hostname of my server.
-    - ```akashyap``` is my username through which I am logged in.
-    - You would be promted to set the VNC password for the User, if you are logging in for the first time.
+      - ```hotsname``` is the hostname of my server.
+      - ```akashyap``` is my username through which I am logged in.
+      - You would be promted to set the VNC password for the User, if you are logging in for the first time.
 
 
   2. Download VNC-Viewer windows application and run it. [Download here.](https://www.realvnc.com/en/connect/download/vnc/linux/)
