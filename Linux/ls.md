@@ -429,12 +429,7 @@ ls --tabsize=10
 backup  id_rsa  mywebproject  new-apache-project  opt        web
 demo    id_rsa.pub      my_work     newport         scripting  z.sh
 ```
-####
-```sh
-
-```
-
-
+<br>
 
 ## One Line Commands:
 
@@ -455,6 +450,7 @@ demo    id_rsa.pub      my_work     newport         scripting  z.sh
 - List all the directories only using echo command: ```echo */```
 - Get the newest file or directory, use this command: ```ls -t | head -1```
 - Get the oldest file or directory, use this command: ```ls -t | tail -1```
+<br>
 
 ## Some other not so famous ```ls``` commands
 
@@ -479,7 +475,7 @@ demo    id_rsa.pub      my_work     newport         scripting  z.sh
    - ```-q```, ```--hide-control-chars```	Print ? instead of non graphic characters.
    - ```--quoting-style=word```	Use quoting style word for entry names: literal, locale, shell, shell-always, c, escape.
    - Print the SELinux security context of each file: ```ls -lZ```, ```--context```
-
+<br>
 
 ## Notes:
  - If the user you are logged in doesn’t have read permissions to the directory, you will get a message saying that ls can’t open the directory:
