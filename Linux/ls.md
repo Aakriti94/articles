@@ -15,6 +15,33 @@ ls [OPTIONS] [FILES]
 | :-------	                                              |   :--   |
 |**[Show the contents of a directory](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-the-contents-of-a-directory)**|```ls```|
 |**[Show hidden files and folders](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-hidden-files-and-folders-ls--a-)**|```ls -a```|
+|**[Show a long listing](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-a-long-listing-ls--l)**|```ls -l```|
+|**[Sort by size](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-by-size-ls--s-ls--ls-)**|```ls -lS```|
+|**[Sort by modification time](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-by-modification-time-ls--lt)**|```ls -lt```|
+|**[Sort in the reverse order](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-in-the-reverse-order-ls--lr)**|```ls -lr```|
+|**[Sort alphabetically by extension](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-alphabetically-by-extension-ls--lx)**|```ls -lX```|
+|**[Show file size in human readable format](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-file-size-in-human-readable-format-ls--lh)**|```ls -lh```|
+|**[Display one file or folder per line](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#display-one-file-or-folder-per-line-ls--1)**|```ls -1```|
+|**[Show a recursive listing](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-a-recursive-listing-ls--r)**|```ls -lR```|
+|**[Append file types to listings](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#append-file-types-to-listings-ls--f)**|```ls -F```|
+|**[Display Inode number of File or Directory](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#display-inode-number-of-file-or-directory-ls--li)**|```ls -li```|
+|**[Display UID and GID of Files](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#display-uid-and-gid-of-files-ls--n)**|```ls -n```|
+|**[Listing the name of the files without the name of its owner](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#listing-the-name-of-the-files-without-the-name-of-its-owner-ls--g)**|``ls -g``|
+|**[Listing the name of files without the name of group](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#listing-the-name-of-files-without-the-name-of-group-ls--lg)**|```ls -lG```|
+|**[List the size of files and folders in desired scale format](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-the-size-of-files-and-folders-in-desired-scale-format-ls---block-sizem--l-ls---block-sizek--l)**|```ls --block-size=M -l```|
+|**[Show author of each file](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-author-of-each-file-ls---author--l)**|```ls --author -l```|
+|**[Print the contents of a directory separated with comma](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#print-the-contents-of-a-directory-separated-with-comma-ls--m-ls---formatcomma-)**|```ls -m```|
+|**[Enclose your output in double quotes](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#enclose-your-output-in-double-quotes-ls--q)**|```ls -Q```|
+|**[Manually assign the value of screen width and control number of columns appearing](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#manually-assign-the-value-of-screen-width-and-control-number-of-columns-appearing-ls---width-no)**|```ls --width 80```|
+|**[Ignoring Files](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#ignoring-files-ls---hide)**|```ls --hide```|
+|**[Dired mode](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#Dired-mode-ls--ld)**|```ls -lD```|
+|**[Print the name of folders before directories](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#print-the-name-of-folders-before-directories-ls---group-directories-first)**|```ls --group-directories-first```|
+|**[List the contents of a directory with time using various time styles](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-the-contents-of-a-directory-with-time-using-various-time-styles-ls--l-time-stylestyle)**|```ls -l –time-style=[STYLE]```|
+|**[Include manual tab size](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#include-manual-tab-size-at-the-contents-of-directory-listed-by-ls-command-instead-of-default-8-ls---tabsizevalue)**|```ls --tabsize=[value]```|
+|**[One Line Commands](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#one-line-commands)**||
+|**[Some other not so famous ```ls``` commands](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#some-other-not-so-famous-ls-commands)**||
+|**[Notes](#https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#notes)**||
+
 
 ## Exit Status
 
@@ -337,7 +364,7 @@ a.txt  b.doc  h.exe  i.cpp  k.txt  l.csv  r.xml  y.jsp  y.txt  z.sh
 b.doc  h.exe  i.cpp  l.csv  r.xml  y.jsp  z.sh
 ```
 
-#### dired mode: ```ls -lD```
+#### Dired mode: ```ls -lD```
 Generate output designed for Emacs' dired mode. [More information..](https://www.gnu.org/software/coreutils/manual/html_node/What-information-is-listed.html#What-information-is-listed)
 ```sh
 -bash-4.2$ ls -lD
