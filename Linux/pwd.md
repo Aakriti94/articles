@@ -11,16 +11,16 @@ pwd [OPTION]...
 ## Contents
 | Options                                                 | command |
 | :-------	                                              |   :--   |
-|**[Print the current working directory]()**|```pwd```||**[Print the current working directory]()**|```pwd```|
-|**[Display the logical current working directory]()**|```pwd```|
-|**[Avoid symlinks]()**|```pwd -P```|
-|**[Reference ```pwd``` in shell scripts]()**|```echo $PWD```|
-|**[Display ```pwd``` command version]()**|```pwd --version```|
-|**[Information about pwd]()**|```pwd --help```|
-|**[Display in command line prompt]()**| |
-|**[Set multi-line command line prompt]()**| |
-|**[One Liners]()**| |
-|**[Notes]()**| |
+|**[Print the current working directory](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#print-the-current-working-directory-pwd)**|```pwd```|
+|**[Display the logical current working directory](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-the-logical-current-working-directory-pwd--l---logical)**|```pwd```|
+|**[Avoid symlinks](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#avoid-symlinks-pwd--p---physical)**|```pwd -P```|
+|**[Reference ```pwd``` in shell scripts](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#reference-pwd-in-shell-scripts)**|```echo $PWD```|
+|**[Display ```pwd``` command version](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-pwd-command-version-binpwd---version)**|```pwd --version```|
+|**[Information about pwd](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#to-see-information-about-pwd-enter-binpwd---help)**|```pwd --help```|
+|**[Display in command line prompt](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-in-command-line-prompt)**| |
+|**[Set multi-line command line prompt](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#set-multi-line-command-line-prompt)**| |
+|**[One Liners](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#one-liners)**| |
+|**[Notes](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#notes)**| |
 
 
 
@@ -82,7 +82,7 @@ In most shells the $PWD variable is available and is set each time a user or in 
   -bash-4.2$ echo "Current working directory is : $PWD"
   Current working directory is : /cos/home3/akashyap
   ```
- - Is it better to use ```$(pwd)``` or ```$PWD```? - https://unix.stackexchange.com/questions/173916/is-it-better-to-use-pwd-or-pwd
+ - Is it better to use ```$(pwd)``` or ```$PWD```? - [Answer Here. ](https://unix.stackexchange.com/questions/173916/is-it-better-to-use-pwd-or-pwd)
 
 #### Display ```pwd``` command version: ```/bin/pwd --version```
 ```
@@ -159,11 +159,13 @@ pwd
     pwd is /usr/bin/pwd
     ```
     - By typing ```pwd```, you end up using the shell builtin provided by bash: ```pwd```
+
       ```
       -bash-4.2$ pwd
       /cos/home3/akashyap
       ```
     - To use the binary version, type full path ```/bin/pwd```: ```/usr/bin/pwd```
+    
       ```
       -bash-4.2$ /usr/bin/pwd
       /cos/home3/akashyap
