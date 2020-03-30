@@ -167,6 +167,6 @@ pwd
     - To use the binary version, type full path ```/bin/pwd```: ```/usr/bin/pwd```
 
       ```sh
-      -bash-4.2$ /usr/bin/pwd
+      -bash-4.2$ /bin/pwd
       /cos/home3/akashyap
       ```
