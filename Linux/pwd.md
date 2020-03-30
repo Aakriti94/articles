@@ -12,11 +12,11 @@ pwd [OPTION]...
 | Options                                                 | command |
 | :-------	                                              |   :--   |
 |**[Print the current working directory](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#print-the-current-working-directory-pwd)**|```pwd```|
-|**[Display the logical current working directory](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-the-logical-current-working-directory-pwd--l---logical)**|```pwd```|
+|**[Display the logical current working directory](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-the-logical-current-working-directory-pwd--l---logical)**|```pwd -L```|
 |**[Avoid symlinks](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#avoid-symlinks-pwd--p---physical)**|```pwd -P```|
 |**[Reference ```pwd``` in shell scripts](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#reference-pwd-in-shell-scripts)**|```echo $PWD```|
 |**[Display ```pwd``` command version](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-pwd-command-version-binpwd---version)**|```pwd --version```|
-|**[Information about pwd](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#to-see-information-about-pwd-enter-binpwd---help)**|```pwd --help```|
+|**[Information about ```pwd```](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#to-see-information-about-pwd-enter-binpwd---help)**|```pwd --help```|
 |**[Display in command line prompt](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#display-in-command-line-prompt)**| |
 |**[Set multi-line command line prompt](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#set-multi-line-command-line-prompt)**| |
 |**[One Liners](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md#one-liners)**| |
@@ -33,12 +33,12 @@ pwd [OPTION]...
 ## Options
 #### Print the current working directory: ```pwd```
 ```
-pwd
+-bash-4.2$ pwd
 /cos/home3/akashyap
 ```
 
 #### Display the logical current working directory: ```pwd -L```, ```--logical```
-The ```-L``` option stands for Logical Links. It cause ```pwd``` to use ```$PWD``` from environment, even if it contains symlinks. It do not resolve symlinks.
+The ```-L``` option stands for Logical Links. It cause ```pwd``` to use variable ```$PWD``` from environment, even if it contains symlinks. It does not resolve symlinks.
 ```
 -bash-4.2$ pwd -L
 /cos/home3/akashyap
@@ -58,7 +58,7 @@ lrwxrwxrwx    1 root root     8 Apr 24  2018 sbin -> usr/sbin
 /usr/bin
 ```
 
-- If no options are given at run-time does “pwd” takes option -P into account or not, automatically.
+- If no options are given at run-time does “pwd” takes option -P into account automatically.
   ```
   -bash-4.2$ pwd
   /cos/home3/akashyap
@@ -67,7 +67,7 @@ lrwxrwxrwx    1 root root     8 Apr 24  2018 sbin -> usr/sbin
   ```
 
 #### Reference ```pwd``` in shell scripts:
-In most shells the $PWD variable is available and is set each time a user or in script changes directory. As such this variable can be referenced to show the current working directory.
+In most shells the ```$PWD``` variable is available and is set each time a user or in script changes directory. As such this variable can be referenced to show the current working directory.
 ```
 -bash-4.2$ cd /cos/home3/akashyap/
 -bash-4.2$ echo $PWD
@@ -82,7 +82,7 @@ In most shells the $PWD variable is available and is set each time a user or in 
   -bash-4.2$ echo "Current working directory is : $PWD"
   Current working directory is : /cos/home3/akashyap
   ```
- - Is it better to use ```$(pwd)``` or ```$PWD```? - [Answer Here. ](https://unix.stackexchange.com/questions/173916/is-it-better-to-use-pwd-or-pwd)
+ - Is it better to use ```$(pwd)``` or ```$PWD```? - [See the answers here. ](https://unix.stackexchange.com/questions/173916/is-it-better-to-use-pwd-or-pwd)
 
 #### Display ```pwd``` command version: ```/bin/pwd --version```
 ```
@@ -140,19 +140,19 @@ pwd
 ## Notes:
 
  - #### ```pwd``` is normally a shell builtin
-    In most shells pwd is a shell builtin. This means the command is present in the shell rather than calling an external program. This means that the code will run significantly faster than calling an external executable.
+    In most shells ```pwd``` is a shell builtin. This means the command is present in the shell rather than calling an external program. This means that the code will run significantly faster than calling an external executable.
     ```
     which pwd
     pwd: shell builtin command
     ```
 
-    Whilst most shells have pwd as a shell builtin the command also exists on systems as an executable.
+    Whilst most shells have ```pwd``` as a shell builtin the command also exists on systems as an executable.
     ```
     -bash-4.2$ which pwd
     /usr/bin/pwd
     ```
 
-    To see all locations containing an executable named pwd, enter:
+    To see all locations containing an executable named ```pwd```, enter:
     ```
     -bash-4.2$ type -a pwd
     pwd is a shell builtin
@@ -165,7 +165,7 @@ pwd
       /cos/home3/akashyap
       ```
     - To use the binary version, type full path ```/bin/pwd```: ```/usr/bin/pwd```
-    
+
       ```
       -bash-4.2$ /usr/bin/pwd
       /cos/home3/akashyap
