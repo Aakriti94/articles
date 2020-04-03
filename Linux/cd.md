@@ -12,21 +12,21 @@ The items in square brackets are optional.
 ## Contents
 | Options                                                 | command |
 | :-------	                                              |   :--   |
-|**[Change to home directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-home-directory-cd)**|```cd```|
-|**[Follow symbolic links](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#follow-symbolic-links-cd--l)**|```cd -L```|
-|**[Don’t follow symbolic links](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#dont-follow-symbolic-links-cd--p)**|```cd -P```|
-|**[Change the path to root directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-the-path-to-root-directory-cd-)**|```cd /```|
-|**[Change to the parent of the current directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-the-parent-of-the-current-directory-cd-)**|```cd ..```|
-|**[Return directly to its home directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-directly-to-its-home-directory-cd--)**|```cd ~```|
-|**[Return to the previous current directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-to-the-previous-current-directory-cd--)**|```cd -```|
-|**[Show last working directory from where we moved](#)**|```cd --```|
-|**[Absolute and Relative Path Names](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#absolute-and-relative-path-names)**||
-|**[Directories with Space in Their Names](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#directories-with-space-in-their-names-cd-dir-name-with-space-cd-dir-name-with-space)**|```cd 'Dir name with space'```|
-|**[Change from current working directory to a particular directory and list all its settings in one go](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-from-current-working-directory-to-a-particular-directory-and-list-all-its-settings-in-one-go-cd-my_work--ls)**|```cd ~/my_work && ls```|
-|**[Create directory and switch to it using single command](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-directory-and-switch-to-it-using-single-command-mkdir-dir-name--cd-_)**|```mkdir [dir-name] && cd $_```|
-|**[Create a directory named ‘-’ and switch to it](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-a-directory-named---and-switch-to-it-cd--)**|```cd ./-```|
-|**[The working directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#the-working-directory-cd-)**|```cd .```|
-|**[Notes](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#notes)**||
+|**[Change to home directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-home-directory-cd)**|```cd```|
+|**[Follow symbolic links](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#follow-symbolic-links-cd--l)**|```cd -L```|
+|**[Don’t follow symbolic links](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#dont-follow-symbolic-links-cd--p)**|```cd -P```|
+|**[Change the path to root directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-the-path-to-root-directory-cd-)**|```cd /```|
+|**[Change to the parent of the current directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-the-parent-of-the-current-directory-cd-)**|```cd ..```|
+|**[Return directly to its home directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-directly-to-its-home-directory-cd--)**|```cd ~```|
+|**[Return to the previous current directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-to-the-previous-current-directory-cd--)**|```cd -```|
+|**[Show last working directory from where we moved](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#show-last-working-directory-from-where-we-moved-cd---)**|```cd --```|
+|**[Absolute and Relative Path Names](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#absolute-and-relative-path-names)**||
+|**[Directories with Space in Their Names](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#directories-with-space-in-their-names-cd-dir-name-with-space-cd-dir-name-with-space)**|```cd 'Dir name with space'```|
+|**[Change from current working directory to a particular directory and list all its settings in one go](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-from-current-working-directory-to-a-particular-directory-and-list-all-its-settings-in-one-go-cd-my_work--ls)**|```cd ~/my_work && ls```|
+|**[Create directory and switch to it using single command](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-directory-and-switch-to-it-using-single-command-mkdir-dir-name--cd-_)**|```mkdir [dir-name] && cd $_```|
+|**[Create a directory named ‘-’ and switch to it](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-a-directory-named---and-switch-to-it-cd--)**|```cd ./-```|
+|**[The working directory](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#the-working-directory-cd-)**|```cd .```|
+|**[Notes](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#notes)**||
 
 
 ## Options
