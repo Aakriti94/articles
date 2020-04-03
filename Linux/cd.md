@@ -12,7 +12,22 @@ The items in square brackets are optional.
 ## Contents
 | Options                                                 | command |
 | :-------	                                              |   :--   |
-|**[Show the contents of a directory](#)**|```ls```|
+|**[Change to home directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-home-directory-cd)**|```cd```|
+|**[Follow symbolic links](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#follow-symbolic-links-cd--l)**|```cd -L```|
+|**[Don’t follow symbolic links](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#dont-follow-symbolic-links-cd--p)**|```cd -P```|
+|**[Change the path to root directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-the-path-to-root-directory-cd-)**|```cd /```|
+|**[Change to the parent of the current directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-the-parent-of-the-current-directory-cd-)**|```cd ..```|
+|**[Return directly to its home directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-directly-to-its-home-directory-cd--)**|```cd ~```|
+|**[Return to the previous current directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#return-to-the-previous-current-directory-cd--)**|```cd -```|
+|**[Show last working directory from where we moved](#)**|```cd --```|
+|**[Absolute and Relative Path Names](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#absolute-and-relative-path-names)**||
+|**[Directories with Space in Their Names](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#directories-with-space-in-their-names-cd-dir-name-with-space-cd-dir-name-with-space)**|```cd 'Dir name with space'```|
+|**[Change from current working directory to a particular directory and list all its settings in one go](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-from-current-working-directory-to-a-particular-directory-and-list-all-its-settings-in-one-go-cd-my_work--ls)**|```cd ~/my_work && ls```|
+|**[Create directory and switch to it using single command](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-directory-and-switch-to-it-using-single-command-mkdir-dir-name--cd-_)**|```mkdir [dir-name] && cd $_```|
+|**[Create a directory named ‘-’ and switch to it](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#create-a-directory-named---and-switch-to-it-cd--)**|```cd ./-```|
+|**[The working directory](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#the-working-directory-cd-)**|```cd .```|
+|**[Notes](#https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#notes)**||
+
 
 ## Options
 
@@ -30,7 +45,7 @@ The [```pwd``` command](https://github.com/Aakriti94/articles/blob/master/Linux/
 #### Follow symbolic links: ```cd -L```
 Force symbolic links to be followed. In other words, if you tell cd to move into a "directory", which is actually a symbolic link to a directory, it moves into the directory the symbolic link points to.
 
-This option is the default behavior of cd; normally, it will always act as if -L was specified.
+This option is the default behavior of cd. Normally, it will always act as if ```-L``` was specified.
 
 ```
 -bash-4.2$ cd /
@@ -51,7 +66,7 @@ lrwxrwxrwx    1 root root     8 Apr 24  2018 sbin -> usr/sbin
 ```
 
 #### Don’t follow symbolic links: ```cd -P```
-Use the physical directory structure without following symbolic links. In other words, only change into the specified directory if it actually exists as named; symbolic links will not be followed. This option is the opposite of the -L option, and if they are both specified, this option will be ignored.
+Use the physical directory structure without following symbolic links. In other words, only change into the specified directory if it actually exists as named; symbolic links will not be followed. This option is the opposite of the ```-L``` option, and if they are both specified, this option will be ignored.
 
 ```
 -bash-4.2$ cd /
@@ -71,7 +86,7 @@ lrwxrwxrwx    1 root root     8 Apr 24  2018 sbin -> usr/sbin
 /usr/bin
 ```
 
-```-e``` : If the -P option is specified, and the current working directory cannot be determined, this option tells cd to exit with an error. If -P is not specified along with this option, this option has no function.
+```cd -P -e``` : If the ```-P``` option is specified, and the current working directory cannot be determined, this option tells ```cd``` to exit with an error. If ```-P``` is not specified along with this option, this option has no function.
 
 #### Change the path to root directory: ```cd /```
 This command would change your current working directory to root.
@@ -85,8 +100,8 @@ This command would change your current working directory to root.
 ```
 
 #### Change to the parent of the current directory: ```cd ..```
- - the current directory is represented by a single dot: ```.```
- - Its parent directory (i.e., the directory that contains it) is represented by two consecutive dots: ```..```
+ - The current directory is represented by a single dot: ```.```
+ - Its parent directory is represented by two consecutive dots: ```..```
 
 ```
   -bash-4.2$ pwd
@@ -99,7 +114,7 @@ This command would change your current working directory to root.
   /cos/home3/akashyap
 ```
 
-#### Return directly to its home directory: ```cd ~``` <br>
+#### Return directly to home directory: ```cd ~``` <br>
 A home directory, also called a login directory, that serves as the repository for a user's personal files, directories and programs. It is also the directory that a user is first in after logging into the system.
 ```
 -bash-4.2$ pwd
@@ -138,7 +153,7 @@ You can also navigate to another user’s home directory using the following syn
 ```
 
 #### Return to the previous current directory: ```cd -```
-When followed by a space and then a hyphen, cd both returns the user to the previous current directory and reports on a new line the absolute pathname of that directory.
+When followed by a space and then a hyphen, ```cd``` both returns the user to the previous current directory and reports on a new line the absolute pathname of that directory.
 ```
 -bash-4.2$ pwd
 /cos/home3/akashyap/my_work/2020
@@ -205,17 +220,20 @@ drwxr-xr-x 2 akashyap users 4096 Apr  3 00:35 dir with a space
 or, you can do
 -bash-4.2$ cd 'dir with a space'/
 -bash-4.2$ pwd
+/cos/home3/akashyap/dir with a space
 ```
 
-#### Change from current working directory to my_work and list all its settings in one go: ```cd ~/my_work && ls```
+#### Change from current working directory to a particular directory and list all its settings in one go: ```cd ~/[my_work] && ls```
 ```
 -bash-4.2$ cd ~/my_work/ && ll
 drwxr-xr-x 4 akashyap users 4096 Feb 16 23:23 2019
 drwxr-xr-x 3 akashyap users 4096 Feb 16 21:38 2020
+-bash-4.2$ pwd
+/cos/home3/akashyap/my_work
 ```
 
 #### Create directory and switch to it using single command; ```mkdir [dir-name] && cd $_```
-the ```&&``` operator is used for executing multiple commands, and ```$_``` expands to the last argument of the previous command.
+The ```&&``` operator is used for executing multiple commands, and ```$_``` expands to the last argument of the previous command.
 ```
 -bash-4.2$ mkdir new_dir && cd $_
 -bash-4.2$ pwd
@@ -246,8 +264,8 @@ cd .
 ## Notes:
   - ```cd``` is a shell builtin.
 
-  - When navigating through the file system, you can use the ```Tab``` key to autocomplete the names of directories. Adding a slash at the end of the directory name is optional. But, I would prefer to always have a slash at the end.
-  - Check the path of cd command binary:
+  - When navigating through the file system, you can use the ```Tab``` key to autocomplete the names of directories. Adding a slash at the end of the directory name is optional. But, I would suggest to always have a slash at the end.
+  - Check the path of ```cd``` command binary:
     ```
     bash-4.2$ which cd
     /usr/bin/cd
