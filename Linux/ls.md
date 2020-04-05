@@ -69,6 +69,17 @@ backup         .gnome2  mywebproject  opt                 web
 .bash_history  id_rsa   my_work       scripting           z.sh
 ```
 
+#### Show hidden files with the ```.``` and ```..``` file: ```ls -A```
+We can see in the below example that all the hidden files are visible excepth the ```.``` and ```..``` files.
+```sh
+-bash-4.2$ ls -A
+backup         .cache   id_rsa        new-apache-project  scripting
+.bash_aliases  .config  id_rsa.pub    new_dir             .ssh
+.bash_history  demo     .lesshst      newport             .viminfo
+.bash_profile  found    mywebproject  not                 web
+.bashrc        .gnome2  my_work       opt                 z.sh
+```
+
 #### Show a long listing: ```ls -l```
 ```sh
 drwxr-xr-x 3 akashyap users 4096 Apr  2  2019 backup
