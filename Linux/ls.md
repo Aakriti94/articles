@@ -15,6 +15,7 @@ ls [OPTIONS] [FILES]
 | :-------	                                              |   :--   |
 |[Show the contents of a directory](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-the-contents-of-a-directory)|```ls```|
 |[Show hidden files and folders](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-hidden-files-and-folders-ls--a-)|```ls -a```|
+|[Show hidden files without the ```.``` and ```..``` file](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-hidden-files-without-the--and--file-ls--a)|```ls -A```|
 |[Show a long listing](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#show-a-long-listing-ls--l)|```ls -l```|
 |[Sort by size](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-by-size-ls--s-ls--ls-)|```ls -lS```|
 |[Sort by modification time](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#sort-by-modification-time-ls--lt)|```ls -lt```|
@@ -41,7 +42,7 @@ ls [OPTIONS] [FILES]
 |[One Line Commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#one-line-commands)||
 |[Some other not so famous ```ls``` commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#some-other-not-so-famous-ls-commands)||
 |[Notes](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#notes)||
-
+|[List only directories]()|```ls -ld */```|
 
 ## Exit Status
 
@@ -69,8 +70,8 @@ backup         .gnome2  mywebproject  opt                 web
 .bash_history  id_rsa   my_work       scripting           z.sh
 ```
 
-#### Show hidden files with the ```.``` and ```..``` file: ```ls -A```
-We can see in the below example that all the hidden files are visible excepth the ```.``` and ```..``` files.
+#### Show hidden files without the ```.``` and ```..``` file: ```ls -A```
+We can see in the below example that all the hidden files are visible except the ```.``` and ```..``` files.
 ```sh
 -bash-4.2$ ls -A
 backup         .cache   id_rsa        new-apache-project  scripting
@@ -440,7 +441,16 @@ ls --tabsize=10
 backup  id_rsa  mywebproject  new-apache-project  opt        web
 demo    id_rsa.pub      my_work     newport         scripting  z.sh
 ```
-<br>
+
+#### List only directories: ```ls -ld */```
+```
+[akashyap@tanvi ~]$ ls -ld */
+drwxr-xr-x 3 akashyap users 4096 Sep 13  2019 23Sep18/
+drwxr-xr-x 3 akashyap users 4096 Sep 16  2019 26May18/
+drwxr-xr-x 3 akashyap users 4096 Sep 13  2019 currentCopyOfRaksha/
+drwxr-xr-x 2 akashyap users 4096 Sep 12  2019 folder1/
+drwxr-xr-x 3 akashyap users 4096 Sep 13  2019 lastSnapshot/
+```
 
 ## One Line Commands:
 
