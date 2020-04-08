@@ -39,10 +39,11 @@ ls [OPTIONS] [FILES]
 |[Print the name of folders before directories](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#print-the-name-of-folders-before-directories-ls---group-directories-first)|```ls --group-directories-first```|
 |[List the contents of a directory with time using various time styles](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-the-contents-of-a-directory-with-time-using-various-time-styles-ls--l-time-stylestyle)|```ls -l –time-style=[STYLE]```|
 |[Include manual tab size](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#include-manual-tab-size-at-the-contents-of-directory-listed-by-ls-command-instead-of-default-8-ls---tabsizevalue)|```ls --tabsize=[value]```|
+|[List only directories](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-only-directories-ls--ld-)|```ls -ld */```|
 |[One Line Commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#one-line-commands)||
 |[Some other not so famous ```ls``` commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#some-other-not-so-famous-ls-commands)||
 |[Notes](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#notes)||
-|[List only directories]()|```ls -ld */```|
+
 
 ## Exit Status
 
