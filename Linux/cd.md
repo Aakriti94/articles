@@ -153,7 +153,7 @@ You can also navigate to another user’s home directory using the following syn
 ```
 
 #### Return to the previous current directory: ```cd -```
-When followed by a space and then a hyphen, ```cd``` both returns the user to the previous current directory and reports on a new line the absolute pathname of that directory.
+When followed by a space and then a hyphen, ```cd``` both return the user to the previous current directory and reports on a new line the absolute pathname of that directory.
 ```sh
 -bash-4.2$ pwd
 /cos/home3/akashyap/my_work/2020
@@ -184,10 +184,10 @@ When followed by a space and then a hyphen, ```cd``` both returns the user to th
 ```
 
 #### Absolute and Relative Path Names
-The absolute or full path starts from the system root /, and relative path starts from your current directory. By default, when you log into your Linux system, your current working directory is set to your home directory.
+The absolute or full path starts from the system root /, and the relative path starts from your current directory. By default, when you log into your Linux system, your current working directory is set to your home directory.
  - Our home directory is: ```/cos/home3/akashyap```
  - Folder ```scripting``` is inside our home directory.
- - We can use **Relative Path Name** to navigate to ```scripting``` as ```cd scripting```
+ - We can use the **Relative Path Name** to navigate to ```scripting``` as ```cd scripting```
  - **Absolute  Path Name** as ```cd /cos/home3/akashyap/scripting```
 
 ```sh
