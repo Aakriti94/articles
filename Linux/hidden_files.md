@@ -15,7 +15,17 @@ No, hidden files are not bad. They are hidden to declutter your system.
 ## Contents
 | Options                                                 | command |
 | :-------	                                              |   :--   |
-|[Change]()|```cd```|
+|[The single dot-file](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#the-single-dot-file-)|```.```|
+|[The double dot-file](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#the-double-dot-file-)|```..```|
+|[Show hidden files and folders](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#show-hidden-files-and-folders-ls--a)|```ls -a```|
+|[Show hidden files and folders without the ```.``` and ```..``` files](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#show-hidden-files-and-folders-without-the--and--files-ls--a)|```ls -A```|
+|[Create hidden files and folders](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#create-hidden-files-and-folders)|```cat > .hidden-file```|
+|[Hide existing file](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#hide-existing-file)| |
+|[Copy hidden files](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#copy-hidden-files)||
+|[Find And List All Hidden Files Recursively](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#find-and-list-all-hidden-files-recursively-ls--lra)|```ls -lRa```|
+|[List only hidden files and directory](https://github.com/Aakriti94/articles/blob/master/Linux/hidden_files.md#list-only-hidden-files-and-directory-ls--ld-)|```ls -ld .*```|
+
+
 
 ## Options:
 
@@ -108,7 +118,7 @@ drwxr-xr-x 3 akashyap users 4096 Apr 19 02:44 ..
 -rw-r--r-- 1 akashyap users    0 Apr 19 02:44 .file2
 ```
 
-#### List only hidden files and directory: ```ls -ld .*```
+#### [List only hidden files and directory](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-only-directories-ls--ld-): ```ls -ld .*```
 ```sh
 -bash-4.2$ ll -a
 total 28
