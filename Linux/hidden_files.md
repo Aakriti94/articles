@@ -40,7 +40,7 @@ Location, location, location. It means **this directory.**
 ```
 
 #### [The double dot-file:](https://github.com/Aakriti94/articles/blob/master/Linux/cd.md#change-to-the-parent-of-the-current-directory-cd-) ```..```
-It means the directory immediately above the current on.
+It means the directory immediately above the current one.
 ```sh
 -bash-4.2$ pwd
 /cos/home3/akashyap
@@ -77,6 +77,7 @@ Hidden files and folders are made the same way as the normal file/folder, just a
 -bash-4.2$ cat > .hidden-file
 -bash-4.2$ ls -la
 -rw-r--r--   1 akashyap users     0 Apr 18 21:17 .hidden-file
+-bash-4.2$ mkdir .hidden-folder
 ```
 
 #### Hide existing file:
