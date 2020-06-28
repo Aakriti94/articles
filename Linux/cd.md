@@ -33,7 +33,7 @@ The items in square brackets are optional.
 
 #### Change to home directory: ```cd```
 When used without any argument, ```cd``` will take you to your home directory.
-The [```pwd``` command](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md) allows you to find out what directory you are currently in.
+The [```pwd``` command](https://github.com/Aakriti94/articles/blob/master/Linux/pwd.md) allows you to find out what directory you are currently in. Here, ```/cos/home3/akashyap``` is my home directory.
 ```sh
 -bash-4.2$ pwd
 /cos/home3/akashyap/scripting
