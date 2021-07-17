@@ -15,8 +15,8 @@
 | `\e`      | Escape character. Omits the just next single character succeeding to `\e`      | `[aaakriti@aakriti ~]$ echo -e "\eHarry"` <br /> `arry`   |
 | `\n`   | Creates a new line        | `[aaakriti@aakriti ~]$ echo -e "Harry \nPotter \nis \nmy \nfavourite"` <br /> `Harry` <br /> `Potter` <br /> `is` <br /> `my` <br /> `favourite`     |
 | `\r`      | Carriage return. Will not return whatever is return before `\r`. opposite of `\c`    | `[aaakriti@aakriti ~]$ echo -e "Harry \r Potter is my favourite"` <br /> ` Potter is my favourite`   |
-| `\t`   | Horizontal tabs. Use tabs as spaces.     |  [![Example](/Images/echo-t.jpg)](Link)  |
-| `\v`   | Vertical tab space. In a slanting manner       |  [![Example](/Images/echo-v.jpg)](Link) |
+| `\t`   | Horizontal tabs. Use tabs as spaces.     |  [![Example](/Images/echo-t.jpg)](https://github.com/Aakriti94/articles/blob/master/linux-commands/Images/echo-t.jpg)  |
+| `\v`   | Vertical tab space. In a slanting manner       |  [![Example](/Images/echo-v.jpg)](https://github.com/Aakriti94/articles/blob/master/linux-commands/Images/echo-v.jpg) |
 
 ## Other tricks
 
