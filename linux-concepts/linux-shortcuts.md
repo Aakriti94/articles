@@ -1,7 +1,7 @@
 # Linux Shortcuts
 
 | Keys      | Description |
-| ----------- | ----------- |
+| :-----------: | :----------- |
 | `TAB`      |  automatically complete what you were typing or it will show all the possible results       |
 | `Ctrl + C`   | break out of a command or process. This will stop a running program immediately.        |
 | `Ctrl + Z`      | This shortcut will send a running program in the background.       |
@@ -19,7 +19,7 @@
 | `Alt + F`      | Moves forward word by word       |
 | `Alt + B`   |  Moves backward word by word. Opposite of `Alt + F`      |
 | `sudo !!`      | Re-run previous command with `sudo` prepended       |
-| `less +F /log.file`   | Use it instead of `tail -f /log.file`. It glues you at end but use 'Ctl + C' and move around the file up and down. `Shift + F` to get out of follow mode. `q` to exit.   |
+| `less +F /log.file`   | Use it instead of `tail -f /log.file`. It glues you at end but use `Ctl + C` and move around the file up and down. `Shift + F` to get out of follow mode. `q` to exit.   |
 | `Ctrl + X + E`      | For commands larger than a line. It will pop you in a buffer mode for editor.        |
 | `Alt + .`   |  Paste previous command's argument.        |
 
