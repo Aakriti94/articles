@@ -10,7 +10,7 @@
 | `-E`        | Opposite of `-e`. Explicitly supress interpretation of backslash escapes       |
 | `\a`   | Alert through Volume. Make sure your volume is high. It will ring a *ting* on an output        |
 | `\b`      | Backspace, removes all spaces between the texts       |
-| `\b`   | It removes the n no. of character occurring before the `\b` used. Depending on the no. of times used        | 
+| `\b`   | It removes the n no. of character occurring before the `\b` used. Depending on the no. of times used        |
 | `\c`      | Suppress further output. Will not output whatever is written after `\c`       |
 | `\e`      | Escape character. Omits the just next single character succeeding to `\e`      |
 | `\n`   | Creates a new line        |
@@ -41,7 +41,7 @@
   ```
 5. `\c` - Suppress further output. Will not output whatever is written after `\c`
   ```sh
-  [aaakriti@aakriti ~]$ echo -e "Harry \c Potter is my favourite"
+  [aaakriti@aakriti ~]$ echo -e "Harry \c Potter is my favorite"
   Harry
   ```
 6. `\e` - Escape character. Omits the just next single character succeeding to `\e`
@@ -51,25 +51,25 @@
   ```
 7. `\n` - Creates a new line
   ```sh
-  [aaakriti@aakriti ~]$ echo -e "Harry \nPotter \nis \nmy \nfavourite"
+  [aaakriti@aakriti ~]$ echo -e "Harry \nPotter \nis \nmy \nfavorite"
   Harry
   Potter
   is
   my
-  favourite
+  favorite
   ```
-8. `\r` - Carriage return. Will not return whatever is return before `\r`. opposite of `\c`
+8. `\r` - Carriage return. Will return whatever is after `\r`. opposite of `\c`
   ```sh
-  [aaakriti@aakriti ~]$ echo -e "Harry \r Potter is my favourite"
-  Potter is my favourite
+  [aaakriti@aakriti ~]$ echo -e "Harry \r Potter is my favorite"
+  Potter is my favorite
   ```
 9. `\t` - Horizontal tabs. Use tabs as spaces.
   ```sh
-  [aaakriti@aakriti ~]$ echo -e "Harry \tpotter is my favourite"
-  Harry   potter is my favourite
+  [aaakriti@aakriti ~]$ echo -e "Harry \tpotter is my favorite"
+  Harry   potter is my favorite
 
-  [aaakriti@aakriti ~]$ echo -e "Harry \tpotter \tis \tmy \tfavourite"
-  Harry   potter  is      my      favourite
+  [aaakriti@aakriti ~]$ echo -e "Harry \tpotter \tis \tmy \tfavorite"
+  Harry   potter  is      my      favorite
   ```
 10. `\v` - Vertical tab space. In a slanting manner.
   ```sh
