@@ -8,4 +8,4 @@
   - `ls -al | grep '^l'`
 4. List all files only:
   - `ls -p | grep -v /` - Using `ls -p` tells ls to append a slash to entries which are a directory, and using `grep -v /` tells grep to return only lines not containing a slash.
-  - `ls -al | grep '^-'` - sort with first letter starting is `-` 
+  - `ls -al | grep '^-'` - sort with first letter starting is `-`
