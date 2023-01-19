@@ -42,6 +42,7 @@ ls [OPTIONS] [FILES]
 |[List only directories](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#list-only-directories-ls--ld-)|```ls -ld */```|
 |[One Line Commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#one-line-commands)||
 |[Some other not so famous ```ls``` commands](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#some-other-not-so-famous-ls-commands)||
+|[Colored output for ```ls``` command](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md)|```ls -G```|
 |[Notes](https://github.com/Aakriti94/articles/blob/master/Linux/ls.md#notes)||
 
 
@@ -451,7 +452,59 @@ drwxr-xr-x 3 akashyap users 4096 Sep 16  2019 26May18/
 drwxr-xr-x 3 akashyap users 4096 Sep 13  2019 currentCopyOfRaksha/
 drwxr-xr-x 2 akashyap users 4096 Sep 12  2019 folder1/
 drwxr-xr-x 3 akashyap users 4096 Sep 13  2019 lastSnapshot/
+
 ```
+
+#### Colored Output: ```ls -G *```
+
+```
+## Source: https://github.com/Aakriti94/articles/blob/master/Linux/ls.md 
+vi ~/.bashrc
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+alias ls='ls -G'
+alias ll='ls -lG'
+source ~/.bashrc
+```
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+
+
+|ls Attribute|	Foreground color|	Background color|
+|---|---|---|
+|directory	|e	|x|
+|symbolic	|f	|x|
+|socket	|c	|x|
+|pipe	|d	|x|
+|executable	|b	|x|
+|block	|e	|g|
+|character	|e	|d|
+|executable	|a	|b|
+|executable	|a	|g|
+|directory	|a	|c|
+|directory|	a|	d|
+
+|Code	|Meaning (Color)|
+|---|---|
+| a|	Black|
+| b|	Red|
+| c|	Green|
+| d|	Brown|
+| e|	Blue|
+| f|	Magenta
+| g|	Cyan
+| h|	Light grey
+| A|	Bold black, usually shows up as dark grey
+| B|	Bold red
+| C|	Bold green
+| D|	Bold brown, usually shows up as yellow
+| E|	Bold blue
+| F|	Bold magenta
+| G|	Bold cyan
+| H|	Bold light grey; looks like bright white
+| x|	Default foreground or background
 
 ## One Line Commands:
 
